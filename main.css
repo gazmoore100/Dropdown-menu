@@ -21,9 +21,12 @@ button{
     left: 0;
     right: 0;
     top: 50px;
-    width: 150px;
+    width: 110px;
     text-align: center;
     box-shadow: 14px 18px 6px 6px rgba(0,0,0,0.69);
+    transform: translateY(-100%);
+    transition: transform .5s ease-in-out;
+    z-index: -1;
 }
 .dropdownLink{
     text-decoration: none;
@@ -40,4 +43,10 @@ button{
 .dropdown{
     width: 150px;
     position: relative;
+}
+.dropdown:hover button{
+    background-color: #053041;
+}
+.dropdown:hover .dropdownMenu{
+    transform: translateY(0);
 }
